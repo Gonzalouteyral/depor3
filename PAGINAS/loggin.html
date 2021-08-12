@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UFT-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/8fe9fa8736.js" crossorigin="anonymous"></script>
+
+    <!--Css-->
+     <link rel="stylesheet" href="../CSS/estilo.css"> 
+ 
+    <title>LOGGIN</title>
+  
+</head>    
+<body>
+    
+    <!---Inicio de encabezado y menú de navegación--->
+
+    <header>
+      <nav>
+      <div>
+        <a href="../index.html"><img src="../multimedia/logo.jpg" alt="logo" class="logo"></a>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check" class="bar-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="nav-menu">
+        <li><a class="active" href="hoy.html">HOY</a></li>
+        <li><a href="internacionales.html">INTERNACIONALES</a></li>
+        <li><a href="argentina.html">ARGENTINA</a></li>
+        <li><a href="loggin.html">LOGGIN</a></li>
+      </ul>  
+      </nav>
+ 
+</header>     
+      
+
+   <!--zona para registrarse-->
+
+   <main>
+       <h1 class="TituloDePagina">REGISTRATE</h1>
+   </main>    
+
+<div class="banner__loggin">
+
+   <section>
+    
+   <form action="#">
+<ul>
+      <li><label for="nombre">Nombre: </label></li>
+      <li><input type="text" id="nombre" placeholder="Ej: Ejemplo"></li>
+      <li><label for="telefono">Telefono </label></li>
+      <li><input type="tel" id="telefono" placeholder="11 34XX XXXX"></li>
+      <li><label for="email"> Email </label></li>
+      <li><input type="email" id="email" placeholder="Ej: Ejemplo@hotmail.com"></li>
+        <label for="pais">Pais</label></li>
+        <select name="Pais" id="Pais">
+            <option>Argentina</option>
+            <option>Perú</option>
+            <option>Mexico</option>
+            <option>Venezuela</option>
+            <option>Chile</option>
+        </select>
+        <li><label for="notificaciones"><h2>Recibir las ultimas noticias directo a mi mail</h2></label>
+        <input type="checkbox" name="notificaciones" id="notificaciones" unchecked></li>
+        <li><label for="comenrtartios">Dejanos tu comentario</label></li>
+        <textarea name="" cols="30" rows="10" maxlength="140"></textarea>
+      <li><input type="submit" value="Enviar comentario"></li>
+      <li><input type="Reset" value="Limpiar comentario"> </li>
+       </form>
+</ul>
+      </section>     
+       
+  </div> 
+
+<!--inicio del pie de pagina-->
+
+   <footer class="PieDePagina">
+         <p> DERECHOS RESERVADOS </p>
+   </footer>
+
+
+    <!--JavaScript-->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

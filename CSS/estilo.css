@@ -1,0 +1,281 @@
+/*reset*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    }
+
+body{
+    background-color: whitesmoke;
+}    
+
+
+/*ESTILO SECCION index */
+
+.gallery--container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+    padding: 40px;
+    grid-gap: 10px;    
+} 
+
+.gallery__items {
+    position: relative;
+}
+
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.titulo{
+    position: absolute;
+    bottom: 0;
+    color: whitesmoke;
+    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    transition: .3s;
+}    
+
+.gallery__items:nth-child(1) {
+grid-column-start: span 2;
+}
+
+ .gallery__items:nth-child(3) {
+ grid-row-start: span 2;
+}
+
+.gallery__items:nth-child(9) {
+ grid-column-start: span 2;
+}
+
+ 
+
+/*Estilo header*/
+
+header{
+    width: 100%;
+    height: 23vh;
+    background: whitesmoke;
+    }
+
+
+/* Estilo Navegación*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width:140px;
+    margin-left:20px ;
+}
+
+.bar-btn{
+    font-size: 25px;
+    color: #CC2732;
+    margin-right: 20px;
+    cursor: pointer;
+    }
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(223, 219, 219, 0.95);
+    text-align: center;
+    transition: all .5s;
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px ;
+    margin: 50px 0;
+    transition: all .5%;
+}
+
+.nav-menu li a{   
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    }
+
+.nav-menu li a.active, .nav-menu li a:hover{
+   color: #CC2732 ;
+   transition: 2s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 20vh;    
+}
+
+#check:checked ~ .nav-menu li{
+    display: inline-flex;
+    transition: 1s;
+    
+
+}
+
+
+.articulo article{
+    width: 30;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+
+.TituloDePagina{
+    font-weight: bolder;
+    max-width: 1000px;
+    margin: auto 10%;
+    padding: 5px 1px;
+    text-align: center;
+    background-color: #CC2732;
+    color: whitesmoke; 
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(207, 207, 207, 0.384);
+    }    
+
+li{
+    color: #000000;
+    list-style-type: none;
+    display: block;
+    }
+
+/*Estilos Imagenes*/
+ 
+caption{
+    font-style: italic;
+    color: #ffffff;
+}
+
+a{
+    color: black;
+}
+
+
+/*ESTILO LOGGIN*/
+
+.banner__loggin{
+  width: 100%;
+  height: 500%;
+  background-image: url("../multimedia/fono.jpg");
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  margin-bottom: 10px;
+
+}
+
+/*Estilos del Pie de Pagina*/
+
+.PieDePagina{
+    margin: 100px 0px 0px;
+    padding: 5px 1px;
+    text-align: center;
+    color:black; 
+    background: whitesmoke;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+} 
+
+/*Estilos Articulos de las seccions*/
+
+.articulo{
+    text-align: center;
+    margin: 20px 80px;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+}
+
+.gallery_articulos{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
+/*Responsive for desktop */
+
+@media screen and (min-width: 800px){
+
+    .bar-btn{
+        display: none;
+    }
+
+    .logo{
+        margin-left:50px;
+    }
+
+    nav{
+        height: 100px;
+        }
+            
+
+    .nav-menu{
+        color: whitesmoke;
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+        }
+    
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+        }
+    
+    .banner-text h1{
+            
+            font-size: 70px;
+            margin-bottom: 30px;
+        }
+    
+    .banner-text h2{
+        font-size: 20px;
+    }    
+
+    .nav-menu li a{
+        color: rgb(0, 0, 0);
+        }
+
+    .gallery--container {
+        padding: 5% 10% ;
+        grid-template-columns: repeat(3, 1fr); 
+
+    }    
+
+    .TituloDePagina{
+        margin: auto 10%;
+    }
+
+}
+
+
+
